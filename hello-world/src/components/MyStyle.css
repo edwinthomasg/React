@@ -1,0 +1,9 @@
+.heading{
+    color:red;
+    font-size: medium;
+    font-style: italic;
+}
+.colorChange{
+    color: blue;
+    font-style: bold;
+}
