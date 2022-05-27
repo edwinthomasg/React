@@ -15,6 +15,14 @@ import InlineStyle from './components/InlineStyle';
 import './components/AppStyling.css'
 import styles from './components/AppStyling.module.css'
 import FormComponent from './components/Form';
+import Fragment from './components/Fragments';
+import Parent from './components/ParentComp';
+import RefComponent from './components/RefComp';
+import ParentInput from './components/ParentInput';
+import ParentRef from './components/ParentRef';
+import PortalComponent from './components/Portal';
+import ParentPortal from './components/ParentPortal';
+import Test1 from './components/Test1';
 function App() {
   return (
     <div className="App">
@@ -32,7 +40,15 @@ function App() {
      {/* <ListRendering /> */}
      {/* <StyleSheeet className={true} /> */}
      {/* <InlineStyle /> */}
-     <FormComponent />
+     {/* <FormComponent /> */}
+     {/* <Fragment /> */}
+     {/* <Parent /> */}
+     {/* <RefComponent /> */}
+     {/* <ParentInput /> */}
+     {/* <ParentRef /> */}
+     {/* <PortalComponent /> */}
+     {/* <ParentPortal /> */}
+     <Test1 />
   </div>
   );
 }
