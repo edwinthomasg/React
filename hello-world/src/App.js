@@ -23,6 +23,14 @@ import ParentRef from './components/ParentRef';
 import PortalComponent from './components/Portal';
 import ParentPortal from './components/ParentPortal';
 import Test1 from './components/Test1';
+import ErrorTest from './components/ErrorComponent';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import CounterProp from './components/CounterProp';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import ComponentA from './components/Context/ComponentA';
+import { UserProvider } from './components/Context/Context';
 function App() {
   return (
     <div className="App">
@@ -48,7 +56,20 @@ function App() {
      {/* <ParentRef /> */}
      {/* <PortalComponent /> */}
      {/* <ParentPortal /> */}
-     <Test1 />
+     {/* <Test1 /> */}
+     {/* <ErrorTest /> */}
+     {/* <ClickCounter name="edie" />
+     <HoverCounter /> */}
+     {/* <ClickCounterTwo name= {() => "kohli"} /> */}
+     {/* <CounterProp render = {(count,incrementHandler) => {
+       return <ClickCounterTwo count = {count} incrementHandler = {incrementHandler}></ClickCounterTwo>
+     }}/>
+     <CounterProp render = {(count,incrementHandler) => {
+       return <HoverCounterTwo count = {count} incrementHandler = {incrementHandler}></HoverCounterTwo>
+     }}/> */}
+     <UserProvider value="Chandru">
+          <ComponentA />
+     </UserProvider>
   </div>
   );
 }
