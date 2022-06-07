@@ -32,6 +32,7 @@ import RefUseCase from './Components/Ref/RefUseCase';
 import CustomHook from './Components/CustomHooks/CustomHook';
 import CounterOneCustom from './Components/CustomHooks/CounerOneCustom';
 import CounterTwoCustom from './Components/CustomHooks/CounterTwoCustom';
+import FormHook from './Components/CustomHooks/Form';
 const UserContext = React.createContext()
 const ChannelContext = React.createContext()
 const initialCount = 0
@@ -88,8 +89,9 @@ function App() {
      {/* <RefClass /> */}
      {/* <RefUseCase /> */}
      {/* <CustomHook /> */}
-     <CounterOneCustom />
-     <CounterTwoCustom />
+     {/* <CounterOneCustom />
+     <CounterTwoCustom /> */}
+     <FormHook />
     </div>
   );
 }
