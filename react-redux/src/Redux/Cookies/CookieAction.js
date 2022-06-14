@@ -1,8 +1,9 @@
 import { BUY_COOKIES } from "./CookieTypes"
 
-const buyCookies = () => {
+const buyCookies = (number = 1) => {
     return {
-        type : BUY_COOKIES
+        type : BUY_COOKIES,
+        payLoad : number
     }
 }
 
