@@ -25,8 +25,7 @@ const fetchUsers = () => {
         dispatch(getUserListReq())
         console.log("middle")
         axios.get("https://jsonplaceholder.typicode.com/users")
-        .then(response => {
-        
+        .then(response => {       
             console.log("response : ",response.data)
             let users = response.data
             console.log("users : ",users)

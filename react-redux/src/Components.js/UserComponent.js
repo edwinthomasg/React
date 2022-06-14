@@ -6,16 +6,7 @@ const UserComponent = ({userData,getUserList}) => {
     useEffect(() => {
         getUserList()
     },[])
-    return userData.loading ? (<h2>Loading</h2>) :
-    userData.error ? (<h2>{userData.error}</h2>)
-    : (<div>
-        {
-            userData && 
-            userData.users
-            &&
-            userData.users.map(user => user.name)
-        }
-    </div>)
+    return <p>hello</p>
 }   
 const mapStateProps = state => {
     console.log("state user: ",state.users)
