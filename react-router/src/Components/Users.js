@@ -3,6 +3,7 @@ import { Outlet,useSearchParams } from 'react-router-dom'
 const Users = () => {
     const [searchParams,setSearchParams] = useSearchParams()
     const show = searchParams.get('filter')
+    console.log(show)
     return(<div>
         <h3>User1</h3>
         <h3>User2</h3>
